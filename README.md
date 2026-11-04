@@ -21,6 +21,9 @@ A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. 
 - Overtime and payroll-ready attendance CSV exports (operational data, not payroll calculations)
 - Shift management
 - Attendance reports and CSV exports
+- Configurable local alert rules for repeated lateness, consecutive scheduled absences and low attendance
+- Missing check-in / check-out alerts and a recent workforce-attention panel on the dashboard
+- Six-month attendance trend and department-level attendance comparisons
 - Monthly payroll drafts with configurable base salary, allowances, bonus, advance recovery and other deductions
 - Calendar-day pro-rata payroll estimates using present, half-day, paid leave and unpaid absence units
 - Finalized monthly payroll snapshots that retain the figures used at finalization
