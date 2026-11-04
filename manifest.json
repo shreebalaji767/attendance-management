@@ -1,0 +1,10 @@
+{
+  "name": "Attendly Attendance Management",
+  "short_name": "Attendly",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6fa",
+  "theme_color": "#f4f6fa",
+  "description": "Private local attendance management"
+}
