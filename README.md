@@ -29,6 +29,11 @@ A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. 
 - Finalized monthly payroll snapshots that retain the figures used at finalization
 - Employee-wise payslip view with browser print / Save as PDF
 - Monthly payroll CSV export; payroll figures remain operational estimates, not statutory calculations
+- Employee self-service workspace with individual date-filtered attendance statements and downloadable CSV
+- Per-employee monthly attendance calendar, leave application and request tracking
+- Attendance correction decision history and dated shift/schedule history
+- Department-wise employee directory with department filter
+- Shared-device only: no employee login, private portal or cross-device synchronization
 - Local activity history
 - JSON backup and restore
 - Responsive PWA shell with offline caching
