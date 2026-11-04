@@ -3,7 +3,10 @@
 A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. GitHub Pages hosting; browser LocalStorage only; no backend, database, account, paid service or external API.
 
 ## Features
-- People register and profiles
+- People register and detailed employee profiles (employment type, location, reporting manager and last working day)
+- Employee profile history and attendance summaries
+- Department/status filters and safe bulk CSV import with duplicate skipping
+- Employee CSV template and expanded export
 - Daily attendance, check-in/out and remarks
 - Monthly calendar
 - Leave requests and approval
