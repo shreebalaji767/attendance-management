@@ -18,3 +18,6 @@
 /* Phase 4: workforce scheduling and regularization */
 #view .summary{grid-template-columns:repeat(auto-fit,minmax(135px,1fr))}[data-correction],[data-schedule-delete]{white-space:nowrap}#view textarea.field{min-height:78px;resize:vertical}
 @media(max-width:740px){#view .summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Phase 5: payroll workspace and printable payslips */
+#view [data-payroll-edit],#view [data-payslip]{white-space:nowrap}#dialog .profile-details{border-bottom:1px solid var(--line);padding-bottom:14px}#dialog .profile-details strong{color:var(--green)}@media print{#dialog{position:static!important;display:block!important;width:100%;max-height:none;box-shadow:none}#dialog::backdrop,.dialog-head .x{display:none!important}#dialog .formactions{display:none!important}}
