@@ -9,7 +9,11 @@ A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. 
 - Employee CSV template and expanded export
 - Daily attendance, check-in/out and remarks
 - Monthly calendar
-- Leave requests and approval
+- Configurable paid/unpaid leave policies, annual entitlements and carry-forward caps
+- Employee-specific leave balances, adjustments and available-balance calculations
+- Full-day, half-day and hourly leave requests; public holidays excluded from day counts
+- Approval/rejection history and safe attendance integration (existing records are never overwritten)
+- Public holiday calendar
 - Shift management
 - Attendance reports and CSV exports
 - Indicative salary estimates
