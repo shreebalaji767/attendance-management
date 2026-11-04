@@ -14,6 +14,11 @@ A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. 
 - Full-day, half-day and hourly leave requests; public holidays excluded from day counts
 - Approval/rejection history and safe attendance integration (existing records are never overwritten)
 - Public holiday calendar
+- Shift patterns with overnight shift calculations and grace periods
+- Dated employee shift assignments and configurable weekly-off days
+- Attendance regularization requests with approval/rejection and applied change history
+- Department/location-filtered reports for late arrivals, early departures, overtime and missing punches
+- Overtime and payroll-ready attendance CSV exports (operational data, not payroll calculations)
 - Shift management
 - Attendance reports and CSV exports
 - Indicative salary estimates
