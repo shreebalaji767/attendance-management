@@ -34,6 +34,13 @@ A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. 
 - Attendance correction decision history and dated shift/schedule history
 - Department-wise employee directory with department filter
 - Shared-device only: no employee login, private portal or cross-device synchronization
+- Workforce administration: employee document metadata and 60-day expiry alerts (no file uploads)
+- Onboarding and offboarding task checklists with due dates and completion status
+- Department-filtered monthly leave calendar and attendance scorecards
+- Configurable ordered leave approval stages for newly created requests (manual local-admin workflow; not identity-verified)
+- Employee profile recycle bin with restore; linked attendance and leave history is retained
+- Employee attendance statement print layout for browser Print / Save as PDF
+- Exportable activity/audit CSV history
 - Local activity history
 - JSON backup and restore
 - Responsive PWA shell with offline caching
