@@ -14,3 +14,7 @@
 /* Phase 3: leave policy, balance and holiday workspace */
 #view .panel .tablebox{margin-top:10px}[data-policy-edit],[data-holiday-delete],[data-balance]{white-space:nowrap}
 @media(max-width:740px){#view .panel-head{align-items:flex-start;flex-direction:column}#view .panel-head>div{display:flex;flex-wrap:wrap;gap:6px}}
+
+/* Phase 4: workforce scheduling and regularization */
+#view .summary{grid-template-columns:repeat(auto-fit,minmax(135px,1fr))}[data-correction],[data-schedule-delete]{white-space:nowrap}#view textarea.field{min-height:78px;resize:vertical}
+@media(max-width:740px){#view .summary{grid-template-columns:repeat(2,minmax(0,1fr))}}
