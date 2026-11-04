@@ -53,3 +53,9 @@ Repository Settings → Pages → Deploy from a branch → `main` → `/(root)` 
 
 ## Data notice
 Records remain in this browser's LocalStorage. There is no cloud sync or multi-device sharing. Clearing browser site data can erase records. Export JSON backups regularly. Salary figures are estimates, not statutory payroll calculations.
+
+### Phase 9.1 reliability fixes
+- Normalize every core LocalStorage collection before page rendering, including attendance, people, shifts, audit history and shift assignments. Older or incomplete version-1 records receive safe defaults without changing the storage key or schema version.
+- Keep the browser's native PWA install prompt available; the app's Install button provides browser-specific installation guidance instead of suppressing the native prompt.
+- Clone successful network responses synchronously before returning them, and isolate cache-write failures so they cannot consume or break the response.
+- Service-worker cache updated to v12.
