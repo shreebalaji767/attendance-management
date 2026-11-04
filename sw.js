@@ -1,4 +1,4 @@
-const CACHE='attendly-shell-v12';
+const CACHE='attendly-shell-v13';
 const FILES=['./','./index.html','./style.css','./app.js','./manifest.json'];
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)));
@@ -16,12 +16,18 @@ self.addEventListener('fetch',event=>{
     if(cached)return cached;
     try{
       const response=await fetch(request);
-      if(response&&response.ok){
-        const copy=response.clone();
-        caches.open(CACHE).then(cache=>cache.put(request,copy)).catch(()=>{});
+      if(response&&response.ok&&!response.bodyUsed){
+        try{
+          // Clone before any asynchronous cache work. If a browser/runtime has
+          // already consumed the body, skip caching instead of throwing.
+          const cacheCopy=response.clone();
+          await caches.open(CACHE).then(cache=>cache.put(request,cacheCopy));
+        }catch(cacheError){
+          // Caching is optional; never fail the page response because of it.
+        }
       }
       return response;
-    }catch(error){
+    }catch(networkError){
       return (await caches.match('./index.html'))||Response.error();
     }
   })());
