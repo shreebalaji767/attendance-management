@@ -42,7 +42,10 @@ A free static attendance manager built with HTML5, CSS3 and vanilla JavaScript. 
 - Employee attendance statement print layout for browser Print / Save as PDF
 - Exportable activity/audit CSV history
 - Local activity history
-- JSON backup and restore
+- JSON backup and restore with a one-generation local safety snapshot and manual recovery
+- Attendance validation for same-day check-out order and shared punch-time review warnings
+- Data-quality review for identical punch times, duplicate daily records, orphaned records and document date mismatches
+- Employee document metadata editing/deletion with before/after audit details
 - Responsive PWA shell with offline caching
 
 ## GitHub Pages
